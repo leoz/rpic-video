@@ -10,16 +10,20 @@
       var previous_time = new Date();
       var fNi = 0, msAvg = 0, fpsAvg = 0, fcnt = 0, fN = 80, msa = [], wsize = 4;
 
+      var _w = 640;
+      var _h = 360;
+      var _e = "rpi_cam";
+
       function createImageLayer() {
         var img = new Image();
         img.style.position = "absolute";
         img.style.zIndex = -1;
         img.onload = imageOnload;
         img.onclick = imageOnclick;
-        img.width = 512;
-        img.height = 384;
+        img.width = _w;
+        img.height = _h;
         img.src = "/?action=snapshot&n=" + (++imageNr);
-        var webcam = document.getElementById("webcam");
+        var webcam = document.getElementById(_e);
 		window.info = document.getElementById('info').firstChild;
 		window.ravgFps = document.getElementById('ravgfps').firstChild;
 		window.ravgMs = document.getElementById('ravgms').firstChild;

@@ -2,9 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css"/>
+    <script src="jquery-1.8.0.min.js"></script>
+	<script src="video_on.js"></script>
     <script src="mjpg.js"></script>
 </head>
-<body onload="createImageLayer();">
+<body>
+
 
 <div style="display: none">
 
@@ -16,14 +19,17 @@
 
 </div>
 
+<div class="rpi_cam_on">
 
-<div class="video_on">
-
-<div id="webcam">
-<noscript><img src="/?action=snapshot" /></noscript>
+<div id="rpi_cam">
+<noscript>
+    <img src="/?action=snapshot" alt="video on" width="640" height="360" />
+</noscript>
 </div>
 
 </div>
+
 
 </body>
 </html>
+

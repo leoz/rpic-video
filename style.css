@@ -1,9 +1,11 @@
-
-.video_on {
-    position: absolute;
-    margin: -10px 0 0 -10px;
-    width: 514px;
-    height: 386px;
+body {
+    background: grey;
 }
 
+div.rpi_cam_on{
+    margin-left: 7px;
+    margin-top: 7px;
+	width:640px;
+	height:360px;
+}
 
